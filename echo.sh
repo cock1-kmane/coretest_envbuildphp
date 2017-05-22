@@ -8,7 +8,7 @@ if [ "$BOO" == "CE2" ]; then
     echo "Test pass if FOO=CE2 else test is fail"; 
     exit 1; 
 else
-    exit 0;
+    return 0;
 
 
 echo 'EOF' 
