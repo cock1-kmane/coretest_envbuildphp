@@ -13,7 +13,7 @@ env:
   global:
     - FOO=FAR 
     - BOO: BAR
- # - secure: V++tZ+9/Cbx9fUzo78caactXwd4MU6v+1Fb9g+9Tx/v8jHdzayasIQ0qKBe+Z1xWQ7kAFHYEuBdxRSDa8slH5mynnMpo4RiDUHNxX8QE2fqrsPhShAM3xHnuq05LS3k29p9qCkwndqehvrwQ2XEBJTae9yqfnuoioAngEqglnyc2amLl3wqzTWrJHYw20J47WCyhOgyng0tyriLBzU9sKN6j7M5XNTUXZ1asSU7d6i3Egm74hO84SfvYoPGpx4iEUo/c6TW0upbWdUXZL1SccBRLFbhYfNOr0s28IMH28S0D0qbI4t1CJU9fjzL7YEMbKmoe+18qZplNo+VVbgjtOQ== #ALPHA=gone
+    - secure: hZhMbZNAup1axd04/R2xjEfoERUkN5y0KP1K9XKxzvMnfeLZSTmXKZtenB8ZJnAfgR42cLhjfeMZAQgNJw141fYRo0mop8MMfF3pea676br/pSdJsBMZ/Qg0UyP3xGW8+9zOeK/O0HTA98o2xpmox8cMELM+5ec6qucQ22drf6CJTavaJ6GhweBkAbS7j3czXQW07SjTrHOCnMa7qJpfhYGiwhR1cuAIPWk8XqcH6pBWozNxli3DJ+AOl0Ti5FuW66EnYRHZlVgjs0erZFepwIqeZZ7oDnmHYM3M/KMV9dtIZm+D5FRNJCLuamXowTFspj2qRk+m1fEKjK84/w0z3g== #ALPHA=gone
  #   a: 1 
  #   b: 2
  # - c=3 d=4
