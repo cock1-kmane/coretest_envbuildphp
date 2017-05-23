@@ -8,8 +8,6 @@ echo $MATRIXINCLUDE2
 echo $MATRIXINCLUDE3
 echo $A
 echo $B
-echo $C
-echo $D
 echo $ALPHA
 
 if [[ "$FOO" == "CE1" ]]; then
@@ -61,21 +59,7 @@ else
   exit 1
 fi;
 
-if [[ "$C" == "CE8" ]]; then
-  echo "C=$C set from custom build"
-else
-  echo ERROR: Failed, wrong value forthe C variable. Please recheck the env variables are coming from custom builds
-  exit 1
-fi;
-
-if [[ "$D" == "CE9" ]]; then
-  echo "D=$D set from custom build"
-else
-  echo ERROR: Failed, wrong value forthe D variable. Please recheck the env variables are coming from custom builds
-  exit 1
-fi;
-
-if [[ "$ALPHA" == "CE10secure" ]]; then
+if [[ "$ALPHA" == "CE8secure" ]]; then
   echo "ALPHA=$ALPHA set from custom build"
 else
   echo ERROR: Failed, wrong value forthe ALPHA variable. Please recheck the env variables are coming from custom builds
