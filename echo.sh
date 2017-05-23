@@ -1,11 +1,10 @@
 #!/bin/bash -e
 echo 'this is our runsh'
 if [[ "$BOO" == "CE2" ]]; then
-#  MY_SCRIPT_VARIABLE="$BOO"  
   echo "BOO=CE2 set from custom build"
 else
- # MY_SCRIPT_VARIABLE="Some default value because DEPLOY_ENV is undefined"
-  exit 0;
+  echo ERROR: Failed to sign $jBOO. Please recheck the env variables are coming from custom builds
+  exit 1
 fi;
 
 #echo ${MY_SCRIPT_VARIABLE}
