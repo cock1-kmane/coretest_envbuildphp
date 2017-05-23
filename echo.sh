@@ -5,7 +5,7 @@ if [[ "$BOO" == "CE2" ]]; then
   echo "BOO=CE2 set from custom build"
 else
  # MY_SCRIPT_VARIABLE="Some default value because DEPLOY_ENV is undefined"
-  return 0;
+  exit 0;
 fi;
 
 #echo ${MY_SCRIPT_VARIABLE}
