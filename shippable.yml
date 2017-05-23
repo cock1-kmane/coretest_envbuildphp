@@ -5,18 +5,22 @@ language: php
 php:
   - 5.4
  # - 5.5
-  #- 5.6
+  - 5.6
  # - 7.0
-  - 7.1  
+  #- 7.1  
 
 env:   
   global:
     - FOO=FAR 
-    - BOO=BAR
+    - BOO: BAR
  # - secure: V++tZ+9/Cbx9fUzo78caactXwd4MU6v+1Fb9g+9Tx/v8jHdzayasIQ0qKBe+Z1xWQ7kAFHYEuBdxRSDa8slH5mynnMpo4RiDUHNxX8QE2fqrsPhShAM3xHnuq05LS3k29p9qCkwndqehvrwQ2XEBJTae9yqfnuoioAngEqglnyc2amLl3wqzTWrJHYw20J47WCyhOgyng0tyriLBzU9sKN6j7M5XNTUXZ1asSU7d6i3Egm74hO84SfvYoPGpx4iEUo/c6TW0upbWdUXZL1SccBRLFbhYfNOr0s28IMH28S0D0qbI4t1CJU9fjzL7YEMbKmoe+18qZplNo+VVbgjtOQ== #ALPHA=gone
  #   a: 1 
  #   b: 2
  # - c=3 d=4
+  matrix:
+    - a: 1 
+      b: 2
+    - c=3 d=4 
   
 matrix:
   include:
@@ -24,8 +28,9 @@ matrix:
       env: MATRIXINCLUDE1=customenv1
     - php: 7.0
       env: 
-        - MATRIXINCLUDE2=customenv2
-        - MATRIXINCLUDE3=customenv3
+        - MATRIXINCLUDE2: customenv2
+        - MATRIXINCLUDE3: customenv3
+    - php: 7.1
   
   allow_failures:
     - php: 5.6
