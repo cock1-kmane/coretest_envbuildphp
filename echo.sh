@@ -6,10 +6,10 @@ echo $BOO
 echo $MATRIXINCLUDE1
 echo $MATRIXINCLUDE2
 echo $MATRIXINCLUDE3
-echo $a
-echo $b
-echo $c
-echo $d
+echo $A
+echo $B
+echo $C
+echo $D
 echo $ALPHA
 
 if [[ "$FOO" == "CE1" ]]; then
