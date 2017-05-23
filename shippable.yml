@@ -18,8 +18,8 @@ env:
  #   b: 2
  # - c=3 d=4
   matrix:
-    - A=1 
-    - secure: ymVgiKekO/jfi1LRvsZsBxkJIeKNpqqqhJjqzZYBbnFwbabqIAZ7Q4kNe/UgDVdbS3nQe0y0j9F1pTDru/5Evd4Y2N4YcaPHcG3Fes30tTqZKZMeRKDv2wfh7YhZfDBVR5Q3wY8UwxRf59sfrGBa5PeCVQGBRg56sDyHTItl8cuQ7RCrIBLkZ962n1AfAJqadIMxV5UnyE2gpTaLR8tdNpfbmaooZZk8tEilvzwRJ4oOMwDnkNYT315ZgbAIiQ2vcRUPP8wsFJCZRS2Urm89S/qoD/Dl+UGYyaNAX12w759iyGdtcp/eA/xeiWHN2ZcJa3jqVS0FFKXQouJPuOfgAQ== #B=2
+    - A: 1 
+      secure: ymVgiKekO/jfi1LRvsZsBxkJIeKNpqqqhJjqzZYBbnFwbabqIAZ7Q4kNe/UgDVdbS3nQe0y0j9F1pTDru/5Evd4Y2N4YcaPHcG3Fes30tTqZKZMeRKDv2wfh7YhZfDBVR5Q3wY8UwxRf59sfrGBa5PeCVQGBRg56sDyHTItl8cuQ7RCrIBLkZ962n1AfAJqadIMxV5UnyE2gpTaLR8tdNpfbmaooZZk8tEilvzwRJ4oOMwDnkNYT315ZgbAIiQ2vcRUPP8wsFJCZRS2Urm89S/qoD/Dl+UGYyaNAX12w759iyGdtcp/eA/xeiWHN2ZcJa3jqVS0FFKXQouJPuOfgAQ== #B=2
    # - C:3 
    #   D=4 
   
