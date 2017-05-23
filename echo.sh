@@ -1,17 +1,19 @@
 #!/bin/bash -e
 echo 'this is our runsh'
 if [[ "$BOO" == "CE2" ]]; then
-  MY_SCRIPT_VARIABLE="Some default value because DEPLOY_ENV is undefined"
+#  MY_SCRIPT_VARIABLE="$BOO"  
+  echo "BOO=CE2 set from custom build"
 else
-  MY_SCRIPT_VARIABLE="$BOO"
+ # MY_SCRIPT_VARIABLE="Some default value because DEPLOY_ENV is undefined"
+  return 0;
 fi;
 
-echo ${MY_SCRIPT_VARIABLE}
+#echo ${MY_SCRIPT_VARIABLE}
 #if [ "$BOO" == "CE2" ]; then 
 #    echo "Test pass if FOO=CE2 else test is fail"; 
  #   exit 1;
 
-#echo 'EOF' 
+echo 'EOF' 
 #echo $FOO
 #echo $BOO
 
