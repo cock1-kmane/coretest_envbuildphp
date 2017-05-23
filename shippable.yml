@@ -7,6 +7,7 @@ php:
  # - 5.5
   #- 5.6
  # - 7.0
+  - 7.1  
 
 env:   
   global:
@@ -17,15 +18,17 @@ env:
  #   b: 2
  # - c=3 d=4
   
-#matrix:
- # include:
-  #  - php: 5.5
-   #   env: ISOLATED=false
-    #- php: 5.6
-     # env: *(RC=test
+matrix:
+  include:
+    - php: 5.5
+      env: MATRIXINCLUDE1=customenv1
+    - php: 7.0
+      env: 
+        - MATRIXINCLUDE2=customenv2
+        - MATRIXINCLUDE3=customenv3
   
- # allow_failures:
-  #  - php: 5.6
+  allow_failures:
+    - php: 5.6
     
   #exclude:
   #  - php: 5.4
@@ -34,6 +37,9 @@ build:
 
   ci:
     - php --version
+    - export SHIPPABLE_PHP_VERSION="php --version"
+    - echo SHIPPABLE_PHP_VERSION=$SHIPPABLE_PHP_VERSION
+    - if [ "$SHIPPABLE_PHP_VERSION" == "5.6" ]; then foobar; fi
     - echo JOB_TRIGGERED_BY_NAME=$JOB_TRIGGERED_BY_NAME 
     - echo JOB_TRIGGERED_BY_ID=$JOB_TRIGGERED_BY_ID 
     - echo JOB_ID=$JOB_ID
