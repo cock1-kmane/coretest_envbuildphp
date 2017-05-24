@@ -42,10 +42,9 @@ matrix:
 build:
 
   ci:
-    - php --version
-    - echo SHIPPABLE_PHP_VERSION=$SHIPPABLE_PHP_VERSION
-    - if [ "$SHIPPABLE_PHP_VERSION" == "5.6" ]; then foobar; fi
+    - php --version    
     - echo JOB_TRIGGERED_BY_NAME=$JOB_TRIGGERED_BY_NAME 
     - echo JOB_TRIGGERED_BY_ID=$JOB_TRIGGERED_BY_ID 
     - echo JOB_ID=$JOB_ID
     - ./echo.sh 
+    - if [ "$SHIPPABLE_PHP_VERSION" == "5.6" ]; then foobar; fi
