@@ -15,3 +15,7 @@ A: CE6
 B: CE7
 
 ALPHA: CE8secure
+
+key1: CE9
+
+key2: CE10
