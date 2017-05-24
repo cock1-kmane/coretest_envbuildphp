@@ -1,10 +1,17 @@
 # coretest_envbuildphp
 
 FOO: CE1
+
 BOO: CE2
+
 MATRIXINCLUDE1: CE3
+
 MATRIXINCLUDE2: CE4
+
 MATRIXINCLUDE3: CE5
+
 A: CE6
+
 B: CE7
+
 ALPHA: CE8secure
