@@ -56,4 +56,18 @@ else
   exit 1
 fi;
 
+if [[ "$key1" == "CE9" ]]; then
+  echo "key1=$key1 set from custom build"
+else
+  echo ERROR: Failed, wrong value forthe key1 variable. Please recheck the env variables are coming from custom builds
+  exit 1
+fi;
+
+if [[ "$key2" == "CE10" ]]; then
+  echo "key2=$key2 set from custom build"
+else
+  echo ERROR: Failed, wrong value forthe key2 variable. Please recheck the env variables are coming from custom builds
+  exit 1
+fi;
+
 echo 'EOF' 
