@@ -1,15 +1,5 @@
 #!/bin/bash -e
 
-echo 'Environment variable section'
-echo $FOO
-echo $BOO
-echo $MATRIXINCLUDE1
-echo $MATRIXINCLUDE2
-echo $MATRIXINCLUDE3
-echo $A
-echo $B
-echo $ALPHA
-
 if [[ "$FOO" == "CE1" ]]; then
   echo "FOO=$FOO set from custom build"
 else
