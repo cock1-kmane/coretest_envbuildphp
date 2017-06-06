@@ -46,5 +46,5 @@ build:
     - echo JOB_TRIGGERED_BY_NAME=$JOB_TRIGGERED_BY_NAME 
     - echo JOB_TRIGGERED_BY_ID=$JOB_TRIGGERED_BY_ID 
     - echo JOB_ID=$JOB_ID
-    - ./echo.sh 
+    - ./echo.sh   
     - if [ "$SHIPPABLE_PHP_VERSION" == "5.6" ]; then foobar; fi
