@@ -5,7 +5,7 @@ language: php
 php:
   #- 5.4
   #- 5.5
-  - 5.6
+ # - 5.6
   - 7.0
 env:
   global:
@@ -46,8 +46,7 @@ env:
 build:
 
   ci:
-    - php --version
-    
+    - php --version    
     - if [ "$SHIPPABLE_PHP_VERSION" == "7.0" ]; then foobar; fi 
     - echo "$FOO"
     - echo "$BOO"
@@ -66,3 +65,5 @@ build:
     - echo "$TODAY"
     - echo "$TOMO"
     - echo "$YEST"   
+    - sleep 8m
+    
