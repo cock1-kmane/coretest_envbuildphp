@@ -48,3 +48,4 @@ build:
     - echo JOB_ID=$JOB_ID
     - ./echo.sh   
     - if [ "$SHIPPABLE_PHP_VERSION" == "5.6" ]; then foobar; fi
+   
